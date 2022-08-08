@@ -42,7 +42,7 @@ We have searched and looked for a clear and defined dataset curated different so
 
 For training and testing machine learning algorithms, we have used a huge dataset of 651,191 URLs.
 
-![dataset](/assets/url_XGB/data_set.JPG).
+![dataset](/assets/url_RF/data_set.JPG).
 
 
 Out of which 428103 benign or safe URLs, 96457 defacement URLs, 94111 phishing URLs, and 32520 malware URLs.
@@ -51,7 +51,7 @@ Out of which 428103 benign or safe URLs, 96457 defacement URLs, 94111 phishing U
 Depicts their distribution in terms of percentage.
 
 
-![dataset_percentage](/assets/url_XGB/dataset_perc.JPG)
+![dataset_percentage](/assets/url_RF/dataset_perc.JPG)
 
 
 
@@ -84,7 +84,7 @@ lexical features: whole word, prefix/suffix (various lengths possible), stemmed 
 ### Split Data
 
 
-![dataset_split](/assets/url_XGB/Dataset_split.JPG)
+![dataset_split](/assets/url_RF/Dataset_split.JPG)
 
 
 ### XGBoster Classifier Model
@@ -97,12 +97,12 @@ lexical features: whole word, prefix/suffix (various lengths possible), stemmed 
 features importance, Accuracy , confusion matrix
 
 
-![Confusion matrix](/assets/url_XGB/Confusion_matrix.jpg)
+![Confusion matrix](/assets/url_RF/Confusion_matrix.jpg)
 
-![Features_Importance](/assets/url_XGB/Features_Importance.jpg)
+![Features_Importance](/assets/url_RF/Features_Importance.jpg)
 
 
-![Multiclass_ROC](/assets/url_XGB/Multiclass_ROC.png)
+![Multiclass_ROC](/assets/url_RF/Multiclass_ROC.png)
 
 
 ### References
