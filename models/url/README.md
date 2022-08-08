@@ -1,7 +1,7 @@
 # URL Analysis
 
 ![AI](https://img.shields.io/badge/AI-Machine--Learning-brightgreen)
-![Model](https://img.shields.io/badge/Model-XGB-brightgreen)
+![Model](https://img.shields.io/badge/Model-RF-brightgreen)
 ![Type](https://img.shields.io/badge/Type-Classifier-brightgreen)
 ![Aim](https://img.shields.io/badge/Aim-decision-brightgreen)
 ![stage](https://img.shields.io/badge/stage-1st-brightgreen)
