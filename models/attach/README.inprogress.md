@@ -1,22 +1,24 @@
-# URL Analysis
+# Attachment Analysis Stage
 
 ![AI](https://img.shields.io/badge/AI-Machine--Learning-brightgreen)
-![Model](https://img.shields.io/badge/Model-XGB-brightgreen)
-![Type](https://img.shields.io/badge/Type-Classifier-brightgreen)
-![Aim](https://img.shields.io/badge/Aim-decision-brightgreen)
-![stage](https://img.shields.io/badge/stage-1st-brightgreen)
+![cuckoo](https://img.shields.io/badge/opensource-Cuckoo--Sandbox-brightgreen)
+![Type](https://img.shields.io/badge/Type-Opensource-brightgreen)
+![malware](https://img.shields.io/badge/analysis-malware-brightgreen)
+![attachment](https://img.shields.io/badge/email-attachment-brightgreen)
+![stage](https://img.shields.io/badge/stage-3rd-brightgreen)
+![Offline](https://img.shields.io/badge/Offline-Sandbox-red)
+![Online](https://img.shields.io/badge/Online-Sandbox-success)
 
-## URL Filteration Machine learing MODEL 
 
-Detection of Malicious URLs by XGB Model Classifier.
+Detection of Malicious URLs by Cuckoo sandbox opensource.
 
 ### Agenda !
 - [Problem Statment.](#problem-statement)
-- [Data Set.](#data-set)
-- [Importing libraries.](#importing-libraries)
+- [Open source.](#open-source)
+- [Installation.](#installation)
 - [Feature Engineering.](#feature-engineering).
 - [Split Data.](#split-data)
-- [XGBoster Classifier Model.](#XGBoster-classifier-model)
+- [Random Forest Classifier Model.](#RF-classifier-model)
 	- Hyperparameters tunning. 
 	- Model training & prediction.
 	- Ploting Results (features importance, Accuracy , confusion matrix , ROC curve).
@@ -34,7 +36,7 @@ So, in this case study, we will be using well-known boosting machine learning cl
 That decision came up after testing many other known boosting machine learning classifiers like Light GBM, Gradient Boosting Machines.
 XGBoost was the most sufficient and accurate model with best performance parameters.
 
-### Data Set
+### Open source
 
 As known one of the most crucial tasks is to curate the dataset for a machine learning project.
 We have searched and looked for a clear and defined dataset curated different sources for more details check the [references](#references).
@@ -42,7 +44,7 @@ We have searched and looked for a clear and defined dataset curated different so
 
 For training and testing machine learning algorithms, we have used a huge dataset of 651,191 URLs.
 
-![dataset](/assets/url_XGB/data_set.JPG).
+![dataset](/assets/url_RF/data_set.JPG).
 
 
 Out of which 428103 benign or safe URLs, 96457 defacement URLs, 94111 phishing URLs, and 32520 malware URLs.
@@ -51,29 +53,14 @@ Out of which 428103 benign or safe URLs, 96457 defacement URLs, 94111 phishing U
 Depicts their distribution in terms of percentage.
 
 
-![dataset_percentage](/assets/url_XGB/dataset_perc.JPG)
+![dataset_percentage](/assets/url_RF/dataset_perc.JPG)
 
 
 
-### Importing libraries
-- pandas
-- itertools
-- sklearn
-	- metrics:
-		classification_report, mean_squared_error, confusion_matrix, precision_score, recall_score, auc,roc_curve
-	- model_selection:
-		train_test_split
-- numpy
-- random
-- math
-- matplotlib
-- xgboost
-- os
-- socket
-- tld
-- urllib
-- GridSearchCV
-- seaborn
+### Installation
+
+some bla bla bla before installation 
+and can check all details steps in [here](Cuckoo_guide.md)
 
 ### Feature Engineering
 
@@ -84,10 +71,10 @@ lexical features: whole word, prefix/suffix (various lengths possible), stemmed 
 ### Split Data
 
 
-![dataset_split](/assets/url_XGB/Dataset_split.JPG)
+![dataset_split](/assets/url_RF/Dataset_split.JPG)
 
 
-### XGBoster Classifier Model
+### RF Classifier Model
 
 #### Model parameters
 
@@ -97,12 +84,12 @@ lexical features: whole word, prefix/suffix (various lengths possible), stemmed 
 features importance, Accuracy , confusion matrix
 
 
-![Confusion matrix](/assets/url_XGB/Confusion_matrix.jpg)
+![Confusion matrix](/assets/url_RF/Confusion_matrix.jpg)
 
-![Features_Importance](/assets/url_XGB/Features_Importance.jpg)
+![Features_Importance](/assets/url_RF/Features_Importance.jpg)
 
 
-![Multiclass_ROC](/assets/url_XGB/Multiclass_ROC.png)
+![Multiclass_ROC](/assets/url_RF/Multiclass_ROC.png)
 
 
 ### References
