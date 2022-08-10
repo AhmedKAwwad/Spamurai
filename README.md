@@ -83,7 +83,7 @@ Model Conecept Illustration
 
 Model Conecept Illustration
 
-[RainForest Model](models/url/)
+[Random Forest Model](models/url/)
 
 ## Usage
 

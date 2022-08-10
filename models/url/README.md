@@ -8,7 +8,7 @@
 
 ## URL Filteration Machine learing MODEL 
 
-Detection of Malicious URLs by XGB Model Classifier.
+Detection of Malicious URLs by RF Model Classifier.
 
 ### Agenda !
 - [Problem Statment.](#problem-statement)
@@ -16,7 +16,7 @@ Detection of Malicious URLs by XGB Model Classifier.
 - [Importing libraries.](#importing-libraries)
 - [Feature Engineering.](#feature-engineering).
 - [Split Data.](#split-data)
-- [XGBoster Classifier Model.](#XGBoster-classifier-model)
+- [Classifier Model.](#RF-classifier-model)
 	- Hyperparameters tunning. 
 	- Model training & prediction.
 	- Ploting Results (features importance, Accuracy , confusion matrix , ROC curve).
@@ -30,9 +30,9 @@ Classify the raw URLs into different class types such as benign or safe URL, def
 
 As we know machine learning algorithms only support numeric inputs so we will create lexical numeric features from input URLs. So the input to machine learning algorithms will be the numeric lexical features rather than actual raw URLs. If you don't know about lexical features you can refer to this discussion about a lexical feature in StackOverflow.
 
-So, in this case study, we will be using well-known boosting machine learning classifiers namely XGBoost.
+So, in this case study, we will be using well-known boosting machine learning classifiers namely Random Forest/Logistic Regression.
 That decision came up after testing many other known boosting machine learning classifiers like Light GBM, Gradient Boosting Machines.
-XGBoost was the most sufficient and accurate model with best performance parameters.
+Random Forest/Logistic Regression was the most sufficient and accurate models with best performance parameters.
 
 ### Data Set
 
@@ -67,7 +67,7 @@ Depicts their distribution in terms of percentage.
 - random
 - math
 - matplotlib
-- xgboost
+- Random Forest/Logistic Regression
 - os
 - socket
 - tld
@@ -87,7 +87,7 @@ lexical features: whole word, prefix/suffix (various lengths possible), stemmed 
 ![dataset_split](/assets/url_RF/Dataset_split.JPG)
 
 
-### XGBoster Classifier Model
+### RF Classifier Model
 
 #### Model parameters
 
